@@ -3,7 +3,7 @@ require('dotenv').config(); // Load environment variables
 
 const connectDB = async () => {
     try {
-        const connect = await mongoose.connect("mongodb+srv://thanmaikrishna9:Lalitha_0912t@cluster0.n1rnd.mongodb.net/mernapp");
+        const connect = await mongoose.connect("mongodb+srv://<your gmail>:<your password>@cluster0.n1rnd.mongodb.net/mernapp");
         console.log("database is connected");
         
     } catch (e) {
