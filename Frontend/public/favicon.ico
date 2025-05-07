@@ -1,0 +1,1 @@
+app.use('/favicon.ico', express.static('favicon.ico'));
