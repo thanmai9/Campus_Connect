@@ -25,10 +25,9 @@ app.use(cookieParser());
 // Correct route
 app.use('/api/users', require('./Routers/userRoutes'));
 app.use('/api/admins',require('./Routers/adminRoutes'));
-app.use(express.static(path.join(__dirname, 'client/build')));
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/build/index.html'));
-});
+app.use(express.static(...))
+app.get('*', ...)
+
 (async () => {
   try {
       await connectionDB();
