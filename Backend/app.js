@@ -22,6 +22,9 @@ app.use(cookieParser());
 app.use('/api/users', require('./Routers/userRoutes'));
 app.use('/api/admins',require('./Routers/adminRoutes'));
 
+app.get('/', (req, res) => {
+  res.send('Backend is live');
+});
 
 (async () => {
   try {
