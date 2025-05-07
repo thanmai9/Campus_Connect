@@ -23,7 +23,7 @@ const AdminLogin = () => {
         }
 
         try {
-            const result = await axios.post("http://localhost:5000/api/admins/login", { email, password });
+            const result = await axios.post("${process.env.REACT_APP_API_BASE_URL}/api/admins/login", { email, password });
             console.log("result", result);
 
             toast.success("Login Success", {
