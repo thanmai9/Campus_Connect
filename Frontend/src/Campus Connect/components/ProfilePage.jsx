@@ -32,7 +32,7 @@ const ProfilePage = () => {
         // Mock data for development
 
         const response = await axios.get("${process.env.REACT_APP_API_BASE_URL}/api/users/profile", {
-                    withCredentials: true,
+          withCredentials: true,
         });
         const userData = response.data;
         const mockUser = {
