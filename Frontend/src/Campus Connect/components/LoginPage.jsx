@@ -22,7 +22,7 @@ const LoginPage = () => {
         }
 
         try {
-            const result = await axios.post("http://localhost:5000/api/users/login", { email, password },
+            const result = await axios.post("${process.env.REACT_APP_API_BASE_URL}/api/users/login", { email, password },
              {withCredentials:true}
             );
             console.log("result", result);
