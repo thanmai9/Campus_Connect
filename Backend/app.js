@@ -5,8 +5,6 @@ const connectionDB = require('./config/database');
 const adminRoutes = require('./Routers/adminRoutes');
 const cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
-const path = require('path');
-
 const port = process.env.PORT || 5000;
 
 dotenv.config();
@@ -20,13 +18,10 @@ app.use(express.json());
 app.use(cookieParser());
 
 
-
-
 // Correct route
 app.use('/api/users', require('./Routers/userRoutes'));
 app.use('/api/admins',require('./Routers/adminRoutes'));
-app.use(express.static(...))
-app.get('*', ...)
+
 
 (async () => {
   try {
