@@ -41,7 +41,7 @@ const RegisterPage = () => {
 
     try {
       await toast.promise(
-        axios.post("http://localhost:5000/api/users/register", formData),
+        axios.post("${process.env.REACT_APP_API_BASE_URL}/api/users/register", formData),
         {
           pending: "Registering your account...",
           success: "Registration successful! Redirecting to login...",
