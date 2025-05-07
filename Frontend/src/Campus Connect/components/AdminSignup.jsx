@@ -5,7 +5,7 @@ const AdminSignup =()=>{
     const handleSubmit = async(e) => {   
     e.prevent.default();
     try{
-      await fetch('http://localhost:5000/api/admin/signup',{email,password});
+      await fetch(`${REACT_APP_API_BASE_URL}/api/admin/signup`,{email,password});
     }
     catch(error){
     console.log(error);

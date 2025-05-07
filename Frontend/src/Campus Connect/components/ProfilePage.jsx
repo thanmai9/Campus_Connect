@@ -31,7 +31,7 @@ const ProfilePage = () => {
       try {
         // Mock data for development
 
-        const response = await axios.get("${process.env.REACT_APP_API_BASE_URL}/api/users/profile", {
+        const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/users/profile`, {
           withCredentials: true,
         });
         const userData = response.data;
