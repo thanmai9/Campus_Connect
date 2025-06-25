@@ -12,7 +12,7 @@ const app = express();
 
 // Configure CORS with proper origin handling
 const allowedOrigins = [
-  'https://campus-connect-1-pil6.onrender.com',
+  'https://campus-connect-9uf3.onrender.com/',
   'http://localhost:3000' // For local development
 ];
 
