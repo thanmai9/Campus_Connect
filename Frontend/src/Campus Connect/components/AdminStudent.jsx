@@ -40,10 +40,10 @@ export default function AdminStudent() {
       {/* Image Containers */}
       <div className="image-container" style={{ display: "flex", position: "absolute", top: 0, width: "100%", height: "calc(100vh - 80px)" }}>
         <div className="student-section" style={{ flex: 1, backgroundImage: `url(${studentImage})`, backgroundSize: "cover", backgroundPosition: "center" }}>
-          <button className="button button-left" onClick={() => navigate("/Home")}>Student</button>
+          <button className="button button-left" onClick={() => navigate("/LoginPage")}>Student</button>
         </div>
         <div className="admin-section" style={{ flex: 1, backgroundImage: `url(${adminImage})`, backgroundSize: "cover", backgroundPosition: "center" }}>
-          <button className="button button-right" onClick={() => navigate("/AdminHome")}>Admin</button>
+          <button className="button button-right" onClick={() => navigate("/AdminLogin")}>Admin</button>
         </div>
       </div>
 
